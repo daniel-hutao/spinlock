@@ -13,26 +13,30 @@ SpinLock is a spin lock implementation in Go with exponential backoff and adapti
 To install the package, run:
 
 ```bash
-go get github.com/daniel-hutao/spinlock
+go get github.com/daniel-hutao/spinlock@v0.1.0
 ```
 
 ## Usage
 
-Import the package and create a new SpinLock:
+Here is an example of how you can use the spinlock in your code:
 
 ```go
-import "github.com/daniel-hutao/spinlock"
+package main
 
-var sl spinlock.SpinLock
+import (
+	"github.com/daniel-hutao/spinlock"
+)
+
+func main() {
+	var sl spinlock.SpinLock
+
+	sl.Lock()
+	// critical section here
+	sl.Unlock()
+}
 ```
 
-Then you can use the `Lock` and `Unlock` methods:
-
-```go
-sl.Lock()
-// critical section
-sl.Unlock()
-```
+In this example, we first import the spinlock package and create a new SpinLock. Then, we use the Lock and Unlock methods to protect the critical section of our code. The critical section is where you would put the code that you want to protect with the lock.
 
 ## Performance Testing
 
