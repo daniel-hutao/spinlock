@@ -1,7 +1,6 @@
 # SpinLock
 
-# SpinLock
-
+[![Build and Test](https://github.com/yourusername/spinlock/workflows/CI/badge.svg)](https://github.com/yourusername/spinlock/actions)
 [![go report](https://goreportcard.com/badge/github.com/daniel-hutao/spinlock)](https://goreportcard.com/report/github.com/daniel-hutao/spinlock)
 [![release](https://img.shields.io/github/release/daniel-hutao/spinlock.svg)](https://GitHub.com/daniel-hutao/spinlock/releases/)
 
